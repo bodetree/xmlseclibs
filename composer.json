@@ -10,7 +10,11 @@
   ],
   "homepage": "https://github.com/robrichards/xmlseclibs",
   "autoload": {
-    "files": ["xmlseclibs.php"]
+    "classmap": {
+      "XMLSecEnc" : "xmlseclibs.php",
+      "XMLSecurityDSig" : "xmlseclibs.php",
+      "XMLSecurityKey" : "xmlseclibs.php"
+    }
   },
   "suggest": {
     "ext/openssl": "OpenSSL extension",
